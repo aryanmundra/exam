@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slideshow Images</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: grey;" po>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler3"
+            aria-controls="myNavbarToggler3" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><b> Portfolio</b></a>
+        <div class="collapse navbar-collapse" id="myNavbarToggler3">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><b>Projects</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><b>Blogs</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><b>Feedback form</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slide show -->
+    <div class="slideshow_main">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img1.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img2.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img3.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <h2>Projects</h2>
+
+<table>
+  <tr>
+    <th>Project name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Jewelxa</td>
+    <td>This was my first startup . Jewelxa is an ecommerce website for
+      imitation jewellery .This website has all the features like sign in/sign out, Add to cart ,
+      Checking recent orders, Review system for each product and many more features
+      which a ecommerce website usually have.I have hosted the site on AWS by using
+      AWS services like Elastic beanstalk and EC2 Instance and S3
+      Bucket</td>
+
+  </tr>
+  <tr>
+    <td>CANTEEN Food Ordering System</td>
+    <td>n project we had made a website for college canteen . This websites
+      core idea was to remove the problem of students waiting for food in long queue
+      during lunch break . Through this website students could order food few
+      minutes before lunch break and directly pickup their food during break .</td>
+
+  </tr>
+  <tr>
+    <td>TOEFL prep</td>
+    <td>In project we had made a website for the students who want to
+      prepare for the TOEFL exam . TOEFL is an English competitive exam .In this
+      students can give tests, review their mistakes and also learn new topics
+      </td>
+ 
+  </tr>
+  <tr>
+    <td>Hospital management System for covid</td>
+    <td>n project we had build a hospital management system for covid
+      patients. The technologies used in this project were HTML , CSS , DJANGO 
+      </td>
+
+  </tr>
+</table>
+
+
+      <!-- Cards -->
+      <center> <h2>Blogs</h2></center>
+      <div id = "cardsnew">
+
+    </div>
+
+
+        <div class="wrapper">
+          <h2>FeedBack</h2>
+          <div id="error_message">
+             
+          </div>
+          <form action="" id="myform" onsubmit ="my_function()">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            
+          <div class="input_field">
+              <input type="date" id="date">
+          </div>
+            <div class="input_field">
+                <input type="text" placeholder="Title" id="feedback_title">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Message" id="message_box">
+            </div>
+            <p>Gender:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Male</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Female</label><br>
+            <div class="btn">
+                <input type="submit">
+            </div>
+          </form>
+        </div>
+          
+
+  </body>
+  <script type="text/javascript" src="scripts.js"></script>
+</html>
